@@ -9,7 +9,7 @@ resource "aws_lambda_function" "this" {
   timeout             = var.timeout
   description         = var.description
   tags                = var.tags
-  publish             = true  # This ensures that a version is created every time the function is updated
+  publish             = var.publish  # This ensures that a version is created every time the function is updated
 }
 
 resource "aws_lambda_permission" "allow_events_bridge_to_run_lambda" {
