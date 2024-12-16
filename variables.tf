@@ -3,6 +3,13 @@ variable "enabled" {
   description = "Set to `false` to prevent the module from creating any resources"
   type        = bool
 }
+
+
+variable "publish" {
+  default     = false
+  description = "Set to `false` to prevent the module from publishing the version"
+  type        = bool
+}
 variable "role" {
   type = string
   description = "(optional) describe your variable"
