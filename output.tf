@@ -13,6 +13,6 @@ output "lambda_publish" {
 
 
 output "lambda_function_arn_version" {
-  value = aws_lambda_function.this[0].arn
-  description = "The ARN of the Lambda function, including version"
+  value = "${aws_lambda_function.this[0].arn}:${aws_lambda_function.this[0].version}"
+  description = "The ARN of the Lambda function with version"
 }
