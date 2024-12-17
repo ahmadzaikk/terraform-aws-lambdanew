@@ -1,5 +1,5 @@
 resource "aws_lambda_function" "this" {
-  provider = var.provider
+  provider = var.region.provider
   count            = var.enabled ? 1 : 0
   filename         = var.filename
   source_code_hash = var.source_code_hash
