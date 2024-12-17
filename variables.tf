@@ -4,7 +4,7 @@ variable "enabled" {
   type        = bool
 }
 
-variable "region.provider" {
+variable "region_provider" {
   type = string
   description = "(optional) describe your variable"
   default = "aws.us_west_2"
