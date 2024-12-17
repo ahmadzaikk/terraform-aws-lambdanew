@@ -10,3 +10,9 @@ output "lambda_publish" {
   value = aws_lambda_function.this[0].publish
   description = "Indicates whether the Lambda function is published"
 }
+
+
+output "lambda_function_arn_version" {
+  value = aws_lambda_function.this[0].arn
+  description = "The ARN of the Lambda function, including version"
+}
