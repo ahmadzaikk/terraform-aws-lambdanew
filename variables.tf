@@ -5,10 +5,11 @@ variable "enabled" {
 }
 
 variable "region_provider" {
-  type = string
-  description = "(optional) describe your variable"
-  default = "aws.us_west_2"
+  description = "The AWS region for CloudFront"
+  type        = string
+  default     = "us-west-2"
 }
+
 variable "publish" {
   default     = false
   description = "Set to `false` to prevent the module from publishing the version"
