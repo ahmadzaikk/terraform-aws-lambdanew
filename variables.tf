@@ -4,11 +4,18 @@ variable "enabled" {
   type        = bool
 }
 
-variable "region_provider" {
+variable "region_us_west_2" {
   description = "The AWS region for CloudFront"
   type        = string
   default     = "us-west-2"
 }
+
+variable "region_us_east_1" {
+  description = "The AWS region for Lambda"
+  type        = string
+  default     = "us-east-1"
+}
+
 
 variable "publish" {
   default     = false
