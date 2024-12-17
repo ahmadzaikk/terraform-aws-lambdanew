@@ -5,3 +5,8 @@ output "function_name" {
   description = "The name of the Lambda function"
   value       = join("", aws_lambda_function.this.*.function_name)
 }
+
+output "lambda_publish" {
+  value = aws_lambda_function.this[0].publish
+  description = "Indicates whether the Lambda function is published"
+}
