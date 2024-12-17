@@ -1,5 +1,4 @@
 resource "aws_lambda_function" "this" {
-  provider         = aws.us_west_2
   count            = var.enabled ? 1 : 0
   filename         = var.filename
   source_code_hash = var.source_code_hash
