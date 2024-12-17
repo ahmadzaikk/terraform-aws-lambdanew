@@ -4,7 +4,11 @@ variable "enabled" {
   type        = bool
 }
 
-
+variable "provider" {
+  type = string
+  description = "(optional) describe your variable"
+  default = "aws.us_west_2"
+}
 variable "publish" {
   default     = false
   description = "Set to `false` to prevent the module from publishing the version"
